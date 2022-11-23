@@ -71,6 +71,7 @@ class MyApp extends StatelessWidget {
       },
       initialRoute: Routes.workoutListScreen,
       themeMode: ThemeMode.dark,
+      theme: ThemeData(useMaterial3: true),
     );
   }
 }

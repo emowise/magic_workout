@@ -31,7 +31,7 @@ class SetTextField extends StatelessWidget {
             keyboardType: TextInputType.number,
             maxLength: maxLength,
             validator: (value) {
-              if (value == null || value.isEmpty) {
+              if (value == null || value.isEmpty || int.parse(value) < 1) {
                 return '';
               }
               return null;
